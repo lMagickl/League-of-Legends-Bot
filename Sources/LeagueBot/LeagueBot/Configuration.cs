@@ -14,7 +14,8 @@ namespace LeagueBot
 {
     public class Configuration
     {
-        public const string DEFAULT_LEAGUE_PATH = @"C:\Riot Games";
+        // @TODO set dynamic
+        public const string DEFAULT_LEAGUE_PATH = @"D:\Jeux\Riot Games";
 
         public const string CONFIG_PATH = "config.json";
 
@@ -105,7 +106,8 @@ namespace LeagueBot
             Instance = new Configuration()
             {
                 ClientPath = clientPath,
-                LockFile = "C:\\Riot Games\\League of Legends\\lockfile",
+                // @TODO set dynamic 
+                LockFile = @"D:\Jeux\Riot Games\League of Legends\lockfile",
             };
 
             Save();

@@ -121,7 +121,8 @@ namespace LeagueBot.Api
         public void StartProcess()
         {
             ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = @"C:\Riot Games\Riot Client\RiotClientServices.exe";
+            // @TODO set dynamic
+            startInfo.FileName = @"D:\Jeux\Riot Games\Riot Client\RiotClientServices.exe";
             startInfo.Arguments = @" --launch-product=league_of_legends --launch-patchline=live";
             Process.Start(startInfo);
         }

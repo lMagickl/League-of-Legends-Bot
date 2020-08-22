@@ -19,7 +19,7 @@ namespace LeagueBot.Patterns
 {
     class PatternsManager
     {
-        public const string PATH = "Patterns\\";
+        public const string PATH = @"Patterns\";
 
         public const string EXTENSION = ".cs";
 
@@ -124,7 +124,7 @@ namespace LeagueBot.Patterns
                 script.bot = new BotApi();
                 script.client = new LCU();
                 script.game = new GameApi();
-                script.io = new FileIO(Directory.GetCurrentDirectory() + "\\champlist.txt");
+                script.io = new FileIO(Directory.GetCurrentDirectory() + @"\champlist.txt");
                 script.Execute();
             }
         }

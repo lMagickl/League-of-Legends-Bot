@@ -78,7 +78,7 @@ namespace LeagueBot
 
         private static void checkChampList()
         {
-            string path = Directory.GetCurrentDirectory() + "\\champlist.txt";
+            string path = Directory.GetCurrentDirectory() + @"\champlist.txt";
             if (!File.Exists(path))
             {
                 Logger.WriteColor1("champlist.txt not found. Creating file...\nPlease fill the list that has been generated with champion names.\nNOTE: One champion per line.");
@@ -88,7 +88,7 @@ namespace LeagueBot
 
         private static void checkAccountsList()
         {
-            string path = Directory.GetCurrentDirectory() + "\\accounts.txt";
+            string path = Directory.GetCurrentDirectory() + @"\accounts.txt";
             if (!File.Exists(path))
             {
                 Logger.WriteColor2("accounts.txt not found. Creating file...\nPlease fill the list that has been generated with accounts data.\nNOTE: One login:password per line.");
